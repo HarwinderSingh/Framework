@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "XMLBatch">
+	<test name="TestNG">
+	<paramter name="name" value="Harwinder Singh" />
+	     <classes>
+		     <class name="TestNG.Annotations"></class>
+		 </classes>
+	</test>
+</suite>

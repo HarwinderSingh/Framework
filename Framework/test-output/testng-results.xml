@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="XMLBatch" duration-ms="19" started-at="2015-08-26T00:30:34Z" finished-at="2015-08-26T00:30:34Z">
+    <groups>
+    </groups>
+    <test name="TestNG" duration-ms="19" started-at="2015-08-26T00:30:34Z" finished-at="2015-08-26T00:30:34Z">
+      <class name="TestNG.Annotations">
+        <test-method status="PASS" signature="dataDriven()[pri:0, instance:TestNG.Annotations@1f427f2e]" name="dataDriven" duration-ms="5" started-at="2015-08-25T17:30:34Z" finished-at="2015-08-25T17:30:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataDriven -->
+        <test-method status="PASS" signature="printMe()[pri:0, instance:TestNG.Annotations@1f427f2e]" name="printMe" duration-ms="0" started-at="2015-08-25T17:30:34Z" finished-at="2015-08-25T17:30:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printMe -->
+        <test-method status="PASS" signature="iAmAwesome()[pri:0, instance:TestNG.Annotations@1f427f2e]" name="iAmAwesome" duration-ms="1" started-at="2015-08-25T17:30:34Z" depends-on-methods="TestNG.Annotations.printMe" finished-at="2015-08-25T17:30:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iAmAwesome -->
+        <test-method status="PASS" signature="flight()[pri:0, instance:TestNG.Annotations@1f427f2e]" name="flight" duration-ms="0" started-at="2015-08-25T17:30:34Z" depends-on-methods="TestNG.Annotations.iAmAwesome" finished-at="2015-08-25T17:30:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flight -->
+      </class> <!-- TestNG.Annotations -->
+    </test> <!-- TestNG -->
+  </suite> <!-- XMLBatch -->
+</testng-results>
