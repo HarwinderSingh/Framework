@@ -51,14 +51,30 @@ public class Annotations {
 	}
 	
 	@Test (dependsOnMethods = "printMe")
+	public void gitHubMethodSecond(){
+		System.out.println("I am gitHubMethodSecond");
+	}
+	
+	@Test (dependsOnMethods = "printMe")
+	public void gitHubMethodFirst(){
+		System.out.println("gitHubMethodFirst");
+	}
+	
+	@Test (dependsOnMethods = "printMe")
 	public void iAmAwesome(){
 		System.out.println("I am awesome");
 	}
 	
-	@Test
+	/**
+	 * Check with Kulbir Singh about the failure reasons
+	 * @throws IOException
+	 */
+	@Test (enabled=false)
 	public void dataDriven() throws IOException{
 	Properties prop = new Properties();
-	FileInputStream ds = new FileInputStream("C:\\Users\\Harwinder\\workspace\\Framework\\src\\TestNG\\Cmndata.properties");
+	
+//	FileInputStream ds = new FileInputStream("\\Framework\\src\\TestNG\\Cmndata.properties");
+    FileInputStream ds = new FileInputStream("C:\\Users\\Harwinder\\workspace\\Framework\\src\\TestNG\\Cmndata.properties");
 	prop.load(ds);
 	System.out.println(prop.getProperty("place"));
 	}
